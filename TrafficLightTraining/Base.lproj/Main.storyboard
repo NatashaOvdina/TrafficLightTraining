@@ -60,6 +60,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NwQ-qB-l04" secondAttribute="bottom" multiplier="1.1" id="vra-OM-yWc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="NwQ-qB-l04" id="hvo-dp-81g"/>
+                        <outlet property="greenView" destination="nsK-7A-7bG" id="pr4-6t-VUK"/>
+                        <outlet property="redView" destination="t9F-m8-215" id="9rY-OQ-2El"/>
+                        <outlet property="yellowView" destination="xBa-9V-Awa" id="4A6-ad-hVt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
