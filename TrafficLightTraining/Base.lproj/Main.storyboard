@@ -20,34 +20,37 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="66" translatesAutoresizingMaskIntoConstraints="NO" id="Hz1-qs-Zr0">
                                 <rect key="frame" x="146.66666666666666" y="119" width="100" height="432"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9F-m8-215">
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9F-m8-215">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="t9F-m8-215" secondAttribute="height" multiplier="1:1" id="uH4-Hh-jZC"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBa-9V-Awa">
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBa-9V-Awa">
                                         <rect key="frame" x="0.0" y="166" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsK-7A-7bG">
+                                    <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsK-7A-7bG">
                                         <rect key="frame" x="0.0" y="332" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwQ-qB-l04">
-                                <rect key="frame" x="146.66666666666666" y="709.33333333333337" width="100" height="34.333333333333371"/>
+                                <rect key="frame" x="146.66666666666666" y="711.66666666666663" width="100" height="32"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="KDb-2A-WQh"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="START">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
-                                    <color key="baseForegroundColor" systemColor="groupTableViewBackgroundColor"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="0yK-IJ-BUh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -61,7 +64,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="button" destination="NwQ-qB-l04" id="hvo-dp-81g"/>
+                        <outlet property="button" destination="NwQ-qB-l04" id="WDc-2G-xac"/>
                         <outlet property="greenView" destination="nsK-7A-7bG" id="pr4-6t-VUK"/>
                         <outlet property="redView" destination="t9F-m8-215" id="9rY-OQ-2El"/>
                         <outlet property="yellowView" destination="xBa-9V-Awa" id="4A6-ad-hVt"/>
